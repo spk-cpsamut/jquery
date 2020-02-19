@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.4.1.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".in1").keydown(function(event){
+    $(".id1").html("Key: " + event.which);
+  });
+  $(".in1").keypress(function(event){
+    $(".id2").html("Key: " + event.which);
+ });
+
+});
+</script>
+</head>
+<body>
+ Enter : <input class="in1" type="text">
+<div class="id1">D1</div>
+
+<div class="id2">D1</div>
+
+

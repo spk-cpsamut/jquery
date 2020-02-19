@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .codecamp{
+            width: 300px;
+            height: 300px;
+            color: red;
+            font-size: 30px;
+            font-weight: 700;
+            position: relative;
+        }
+    </style>
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $(".move").click(function(){
+                $(".codecamp").animate({
+                left : "300px"
+                })
+            });
+        });
+    </script>
+
+
+</head>
+<body>
+    <button class="move">click Here To Move Codecmap</button>
+
+    <div class="codecamp">Codecamp 5</div>
+</body>
+</html>
