@@ -1,0 +1,29 @@
+
+.nav-bg{
+    background-color: #385898;
+    width: 100%;
+    height: 42px;
+    z-index: -1;
+    position: ;
+    color:  white;
+    
+    
+}
+
+ a link{
+    color: white;
+}
+.nav-jus{
+    width: 80%;
+    height: 42px;
+    margin: auto;
+    color: white;
+    z-index: 100;
+}
+.section{
+    width: 80%;
+    margin: auto;
+}
+
+
+

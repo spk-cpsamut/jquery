@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            $("#plus").keydown(function(e){
+                var text =  $("#plus")
+                if(e.keycode == 13){
+                    $("#plus") = ""
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <input type="text" id="plus">
+    <button class="summit">กดส่งข้อความ</button>
+
+    <div class="showinput"></div>
+</body>
+</html>
