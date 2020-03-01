@@ -11,10 +11,20 @@
   <script src="https://kit.fontawesome.com/af3384b293.js" crossorigin="anonymous"></script>
 <script src="jquery-3.4.1.min.js"></script>
 <script>
+  
   $(document).ready(function(){
-    $(".type").click(function(){
-      
-    })
+    $("#post").click(function(){
+      let text = $("#type").val();
+      let pic = $("#img").val();
+      function newbox(item, img){
+        return `<div class = "container">
+          <div class "row"><div class = "col"> ${item}</div></div>
+          <div class = "row"><div class = "col"> <img src = "${img}"></div></div>
+          </div>`;
+        };
+        $("#last").after(newbox(text, pic));
+        console.log(pic);
+    });
 
   })
 </script>
@@ -63,12 +73,12 @@
       <div class="col">
     <div class="row"><div class="col">สร้างโพสต</div></div>
     <div class="row"><div class="col">
-      <textarea style="width: 100%;" rows="1" class="type"></textarea>
+      <textarea style="width: 100%;" rows="1" id="type"></textarea>
     </div></div>
     <div class="row"><div class="col">
-      <input type="file" value="ใส่รูป">
+      <input type="file" value="ใส่รูป" id="img">
     </div></div>
-    <div class="row"><div class="col">
+    <div class="row" id="last"><div class="col">
       <button type="button" class="btn btn-primary btn-lg btn-block" id="post">โพสต์</button>
     </div></div>
       </div>
@@ -81,7 +91,7 @@
 
 
 
-
+    
   
   
   </div>
